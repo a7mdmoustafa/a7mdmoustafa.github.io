@@ -1,0 +1,1380 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ahmed Moustafa Portfolio</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Ahmed Moustafa — Senior Specialist in Healthcare IT, Digital Health and Revenue Cycle Management. 16+ years, 8+ hospital RCM implementations in Saudi Arabia, NPHIES Champion.">
+  <meta name="theme-color" content="#07060f">
+  <meta property="og:title" content="Ahmed Moustafa — Healthcare IT & Digital Health">
+  <meta property="og:description" content="RCM, HIS & NPHIES implementation across 8+ Saudi hospitals. 30% fewer claim denials. 350+ staff trained.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23a78bfa'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2307060f'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' text-anchor='middle' fill='url(%23g)'%3EAM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+/* =========================================================
+   Ahmed Moustafa — Portfolio
+   Design system: AI-Native UI (ui-ux-pro-max)
+   Fonts: Space Grotesk (display) / DM Sans (body) / Noto Sans Arabic
+   ========================================================= */
+
+:root {
+  --font-display: "Space Grotesk", "Noto Sans Arabic", system-ui, sans-serif;
+  --font-body: "DM Sans", "Noto Sans Arabic", system-ui, sans-serif;
+
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px;
+
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --dur-fast: 160ms;
+  --dur: 280ms;
+  --dur-slow: 600ms;
+  --maxw: 1160px;
+  --nav-h: 68px;
+}
+
+/* ---------- Dark (default: AI look) ---------- */
+:root {
+  --bg: #07060f;
+  --bg-2: #0c0a19;
+  --surface: rgba(255, 255, 255, .035);
+  --surface-2: rgba(255, 255, 255, .06);
+  --surface-solid: #110f20;
+  --border: rgba(167, 139, 250, .16);
+  --border-strong: rgba(167, 139, 250, .34);
+  --text: #eceaf7;
+  --muted: #a6a3c2;
+  --primary: #8b5cf6;
+  --primary-2: #a78bfa;
+  --accent: #22d3ee;
+  --on-primary: #ffffff;
+  --success: #34d399;
+  --glow: rgba(139, 92, 246, .35);
+  --glow-2: rgba(34, 211, 238, .22);
+  --grad: linear-gradient(120deg, #c4b5fd 0%, #a78bfa 35%, #22d3ee 100%);
+  --grad-btn: linear-gradient(120deg, #7c3aed 0%, #6d28d9 45%, #0891b2 100%);
+  --node: 167, 139, 250;
+  --node-2: 34, 211, 238;
+  --icon-fg: #a78bfa;
+  --portrait-bg: radial-gradient(circle at 30% 25%, #2a1f5a, #0d0b1c 70%);
+  color-scheme: dark;
+}
+
+/* ---------- Light (follows the device, or the toggle) ---------- */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #faf7ff; --bg-2: #f2ecff; --surface: rgba(255, 255, 255, .78); --surface-2: #ffffff; --surface-solid: #ffffff;
+    --border: #e3dafc; --border-strong: #c4b5fd; --text: #1e1b4b; --muted: #4b5168;
+    --primary: #7c3aed; --primary-2: #6d28d9; --accent: #0e7490; --on-primary: #ffffff; --success: #047857;
+    --glow: rgba(124, 58, 237, .18); --glow-2: rgba(8, 145, 178, .14);
+    --grad: linear-gradient(120deg, #6d28d9 0%, #7c3aed 40%, #0e7490 100%);
+    --grad-btn: linear-gradient(120deg, #7c3aed 0%, #6d28d9 45%, #0e7490 100%);
+    --node: 124, 58, 237; --node-2: 8, 145, 178;
+    --icon-fg: #7c3aed; --portrait-bg: radial-gradient(circle at 30% 25%, #ede9fe, #ddd6fe 70%);
+    color-scheme: light;
+  }
+  :root:not([data-theme="dark"]) .ic-sun { display: none; }
+  :root:not([data-theme="dark"]) .ic-moon { display: block; }
+}
+:root[data-theme="light"] {
+  --bg: #faf7ff;
+  --bg-2: #f2ecff;
+  --surface: rgba(255, 255, 255, .78);
+  --surface-2: #ffffff;
+  --surface-solid: #ffffff;
+  --border: #e3dafc;
+  --border-strong: #c4b5fd;
+  --text: #1e1b4b;
+  --muted: #4b5168;
+  --primary: #7c3aed;
+  --primary-2: #6d28d9;
+  --accent: #0e7490;
+  --on-primary: #ffffff;
+  --success: #047857;
+  --glow: rgba(124, 58, 237, .18);
+  --glow-2: rgba(8, 145, 178, .14);
+  --grad: linear-gradient(120deg, #6d28d9 0%, #7c3aed 40%, #0e7490 100%);
+  --grad-btn: linear-gradient(120deg, #7c3aed 0%, #6d28d9 45%, #0e7490 100%);
+  --node: 124, 58, 237;
+  --node-2: 8, 145, 178;
+  --icon-fg: #7c3aed;
+  --portrait-bg: radial-gradient(circle at 30% 25%, #ede9fe, #ddd6fe 70%);
+  color-scheme: light;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 16px); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color var(--dur) ease, color var(--dur) ease;
+}
+img { max-width: 100%; display: block; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 70; background: var(--bg); }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0; letter-spacing: -0.02em; text-wrap: balance; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+::selection { background: var(--primary); color: #fff; }
+
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { letter-spacing: 0; line-height: 1.35; }
+[dir="rtl"] body { line-height: 1.8; }
+[dir="rtl"] .flip { transform: scaleX(-1); }
+[dir="rtl"] .metric-num { direction: ltr; text-align: right; }
+[dir="rtl"] .hero-chip strong { direction: ltr; justify-self: start; }
+
+.container { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; inset-inline-start: 16px; top: -60px; z-index: 100; background: var(--primary); color: #fff; padding: 10px 16px; border-radius: 10px; transition: top var(--dur-fast); }
+.skip:focus { top: 12px; }
+
+.ic { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+/* ---------- Background layers ---------- */
+#neural { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none; opacity: .9; }
+.bg-aura {
+  position: fixed; inset: 0; z-index: -3; pointer-events: none;
+  background:
+    radial-gradient(60vw 50vh at 85% -10%, var(--glow), transparent 60%),
+    radial-gradient(50vw 50vh at -10% 30%, var(--glow-2), transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+.progress { position: fixed; top: env(safe-area-inset-top, 0px); inset-inline: 0; height: 3px; z-index: 60; }
+.progress span { display: block; height: 100%; width: 100%; transform-origin: left; transform: scaleX(0); background: var(--grad); }
+[dir="rtl"] .progress span { transform-origin: right; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 48px; padding: 12px 22px; border-radius: 999px;
+  font-weight: 600; font-size: 15px; cursor: pointer; border: 1px solid transparent;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur) var(--ease-out), background-color var(--dur), border-color var(--dur);
+  white-space: nowrap;
+}
+.btn:active { transform: scale(.97); }
+.btn-primary { background: var(--grad-btn); color: var(--on-primary); box-shadow: 0 8px 30px -8px var(--glow); }
+.btn-primary:hover { box-shadow: 0 12px 40px -6px var(--glow), 0 0 0 1px rgba(255,255,255,.12) inset; transform: translateY(-1px); }
+.btn-ghost { background: var(--surface); border-color: var(--border); backdrop-filter: blur(10px); }
+.btn-ghost:hover { border-color: var(--border-strong); background: var(--surface-2); }
+.btn-sm { min-height: 40px; padding: 8px 16px; font-size: 14px; }
+.btn-lg { min-height: 54px; padding: 14px 26px; }
+
+.icon-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 44px; height: 44px; padding: 0 10px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--border); cursor: pointer;
+  transition: border-color var(--dur-fast), background-color var(--dur-fast);
+}
+.icon-btn:hover { border-color: var(--border-strong); background: var(--surface-2); }
+.lang-label { font-weight: 700; font-size: 14px; font-family: "Noto Sans Arabic", var(--font-body); }
+[lang="ar"] .lang-label { font-family: var(--font-body); }
+.ic-sun { display: block; } .ic-moon { display: none; }
+:root[data-theme="light"] .ic-sun { display: none; } :root[data-theme="light"] .ic-moon { display: block; }
+
+/* ---------- Nav ---------- */
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; transition: background-color var(--dur), border-color var(--dur), backdrop-filter var(--dur); border-bottom: 1px solid transparent; }
+.nav.scrolled { background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: blur(16px) saturate(140%); border-bottom-color: var(--border); }
+.nav-inner { height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; font-family: var(--font-display); font-weight: 700; }
+.brand-mark {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px;
+  background: var(--surface-solid); border: 1px solid var(--border-strong);
+  font-size: 15px; letter-spacing: .02em;
+}
+.brand-mark, .portrait-mono { background-clip: padding-box; }
+.brand-mark { color: var(--primary-2); box-shadow: 0 0 24px -6px var(--glow); }
+.brand-name { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; }
+.pulse-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 var(--accent); animation: pulse 2.4s infinite; }
+.nav-links { display: flex; gap: 4px; }
+.nav-links a { padding: 8px 14px; border-radius: 999px; font-size: 14.5px; color: var(--muted); transition: color var(--dur-fast), background-color var(--dur-fast); }
+.nav-links a:hover, .nav-links a.active { color: var(--text); background: var(--surface-2); }
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+.menu-btn { display: none; }
+.drawer { display: grid; gap: 4px; padding-block: 12px 20px; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+.drawer[hidden] { display: none; }
+.drawer a:not(.btn) { padding: 14px 8px; border-bottom: 1px solid var(--border); font-weight: 500; }
+.drawer .btn { margin-top: 12px; }
+
+/* ---------- Hero ---------- */
+.hero { padding: clamp(40px, 8vw, 96px) 0 clamp(48px, 7vw, 88px); overflow-x: clip; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.status {
+  display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 12px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--border); font-size: 14px; color: var(--muted); backdrop-filter: blur(10px);
+}
+[dir="rtl"] .status { padding: 8px 12px 8px 16px; }
+.live-dot { position: relative; width: 9px; height: 9px; border-radius: 50%; background: var(--success); flex: none; }
+.live-dot::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--success); opacity: .5; animation: ping 2s var(--ease-out) infinite; }
+.hero-title { margin-top: 22px; font-size: clamp(44px, 7.4vw, 84px); font-weight: 700; letter-spacing: -0.035em; }
+.hero-title span { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-role { margin-top: 18px; font-family: var(--font-display); font-size: clamp(19px, 2.3vw, 26px); font-weight: 500; line-height: 1.4; }
+.typer { display: inline-flex; align-items: baseline; color: var(--accent); white-space: nowrap; }
+.caret { display: inline-block; width: 2px; height: 1.05em; margin-inline-start: 3px; background: var(--accent); transform: translateY(3px); animation: blink 1s steps(1) infinite; }
+.hero-lead { margin-top: 20px; max-width: 60ch; color: var(--muted); font-size: 17.5px; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 32px; color: var(--muted); font-size: 14px; }
+.hero-badges li { display: inline-flex; align-items: center; gap: 8px; }
+.hero-badges .ic { width: 18px; height: 18px; color: var(--primary-2); }
+
+/* Hero visual: portrait + orbits */
+.hero-visual { position: relative; aspect-ratio: 1; width: 100%; max-width: 460px; justify-self: center; }
+.portrait {
+  position: absolute; inset: 18%; border-radius: 50%; overflow: hidden;
+  background: var(--portrait-bg);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 0 0 8px color-mix(in srgb, var(--primary) 10%, transparent), 0 30px 80px -20px var(--glow), 0 0 60px -10px var(--glow-2);
+  display: grid; place-items: center;
+}
+.portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.portrait-mono { font-family: var(--font-display); font-weight: 700; font-size: clamp(56px, 9vw, 96px); background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -0.04em; }
+.orbit { position: absolute; border-radius: 50%; border: 1px dashed var(--border-strong); animation: spin 38s linear infinite; }
+.orbit-1 { inset: 9%; }
+.orbit-2 { inset: 1%; animation-duration: 54s; animation-direction: reverse; border-style: solid; border-color: var(--border); }
+.orbit-3 { inset: -7%; animation-duration: 72s; }
+.sat {
+  position: absolute; z-index: 2;
+  padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .06em;
+  background: var(--surface-solid); border: 1px solid var(--border-strong); color: var(--primary-2);
+  box-shadow: 0 0 20px -4px var(--glow); animation: float 7s ease-in-out infinite;
+}
+.sat-a { top: 47%; left: 2%; }
+.sat-b { top: -1%; left: 44%; color: var(--accent); animation-delay: -2s; }
+.sat-c { bottom: 6%; right: 14%; animation-delay: -4.5s; }
+.hero-chip {
+  position: absolute; display: grid; gap: 0; padding: 12px 16px; border-radius: 14px;
+  background: color-mix(in srgb, var(--surface-solid) 86%, transparent); border: 1px solid var(--border); backdrop-filter: blur(12px);
+  box-shadow: 0 16px 40px -16px rgba(0,0,0,.5); animation: float 6s ease-in-out infinite;
+}
+.hero-chip strong { font-family: var(--font-display); font-size: 22px; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-chip span { font-size: 12.5px; color: var(--muted); }
+.chip-1 { inset-inline-start: -4%; bottom: 14%; }
+.chip-2 { inset-inline-end: -2%; top: 10%; animation-delay: -3s; }
+
+/* ---------- Impact ---------- */
+.impact { padding: 0 0 clamp(24px, 4vw, 40px); }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); backdrop-filter: blur(12px); overflow: hidden; }
+.metric { padding: 28px 24px; position: relative; }
+.metric + .metric { border-inline-start: 1px solid var(--border); }
+.metric-num { font-family: var(--font-display); font-weight: 700; font-size: clamp(38px, 4.6vw, 54px); line-height: 1; letter-spacing: -0.03em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; font-variant-numeric: tabular-nums; }
+.metric-label { margin-top: 10px; color: var(--muted); font-size: 14.5px; }
+
+/* ---------- Sections ---------- */
+.section { padding: clamp(64px, 9vw, 112px) 0; position: relative; }
+.section-alt::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--primary) 5%, transparent) 30%, color-mix(in srgb, var(--primary) 5%, transparent) 70%, transparent); }
+.section-head { max-width: 720px; margin-bottom: clamp(32px, 5vw, 52px); }
+.section-head.center { text-align: center; margin-inline: auto; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+[dir="rtl"] .eyebrow { letter-spacing: 0; font-size: 14px; }
+.eyebrow .ic { width: 16px; height: 16px; }
+.section-title { margin-top: 14px; font-size: clamp(30px, 4.2vw, 46px); font-weight: 700; }
+.section-sub { margin-top: 16px; color: var(--muted); font-size: 17px; max-width: 62ch; }
+.center .section-sub { margin-inline: auto; }
+
+/* ---------- Ask console ---------- */
+.ask-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.ask-grid .section-head { margin-bottom: 0; }
+.console {
+  border-radius: var(--radius-lg); border: 1px solid var(--border-strong);
+  background: color-mix(in srgb, var(--surface-solid) 88%, transparent); backdrop-filter: blur(16px);
+  box-shadow: 0 30px 80px -30px var(--glow), 0 0 0 1px rgba(255,255,255,.02) inset; overflow: hidden;
+}
+.console-bar { display: flex; align-items: center; gap: 7px; padding: 14px 18px; border-bottom: 1px solid var(--border); }
+.console-bar .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border-strong); }
+.console-title { margin-inline-start: 10px; font-size: 12.5px; color: var(--muted); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+.console-body { display: grid; gap: 14px; padding: 22px; min-height: 210px; align-content: start; }
+.msg { max-width: 92%; font-size: 15.5px; }
+.msg-user { justify-self: end; padding: 10px 16px; border-radius: 16px 16px 4px 16px; background: var(--grad-btn); color: #fff; }
+[dir="rtl"] .msg-user { border-radius: 16px 16px 16px 4px; }
+.msg-ai { display: flex; gap: 12px; align-items: flex-start; }
+.msg-ai p { padding-top: 6px; }
+.ai-avatar { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; flex: none; background: var(--surface-2); border: 1px solid var(--border-strong); color: var(--accent); }
+.ai-avatar .ic { width: 17px; height: 17px; }
+.msg-ai.thinking p::after { content: ""; display: inline-block; width: 26px; height: 8px; margin-inline-start: 6px; background: radial-gradient(circle, var(--muted) 2.5px, transparent 3px) 0 50% / 9px 8px repeat-x; animation: dots 1s steps(3) infinite; vertical-align: middle; }
+.stream-caret { display: inline-block; width: 7px; height: 1em; margin-inline-start: 2px; background: var(--accent); vertical-align: -2px; animation: blink .8s steps(1) infinite; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 22px 22px; }
+.chip {
+  min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; font-size: 14px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  transition: border-color var(--dur-fast), background-color var(--dur-fast), transform var(--dur-fast);
+}
+.chip:hover { border-color: var(--primary-2); background: var(--surface-2); }
+.chip:active { transform: scale(.97); }
+.chip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.chip:disabled { opacity: .55; cursor: progress; }
+
+/* ---------- Cards ---------- */
+.cards-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.card, .tile, .project, .tl-card, .cert, .skill-group, .edu-item {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); backdrop-filter: blur(12px);
+}
+.card { padding: 26px; transition: border-color var(--dur), transform var(--dur) var(--ease-out), box-shadow var(--dur); }
+.card:hover, .tile:hover, .project:hover { border-color: var(--border-strong); transform: translateY(-3px); box-shadow: 0 20px 50px -24px var(--glow); }
+.card h3, .tile h3 { margin-top: 18px; font-size: 19px; font-weight: 600; }
+.card p, .tile p { margin-top: 10px; color: var(--muted); font-size: 15px; }
+.card-icon {
+  display: grid; place-items: center; width: 46px; height: 46px; border-radius: 13px; flex: none;
+  background: linear-gradient(140deg, color-mix(in srgb, var(--primary) 22%, transparent), color-mix(in srgb, var(--accent) 14%, transparent));
+  border: 1px solid var(--border-strong); color: var(--icon-fg);
+}
+.card-icon .ic { width: 22px; height: 22px; }
+
+/* ---------- Bento ---------- */
+.bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: minmax(190px, auto); gap: 16px; }
+.tile { position: relative; padding: 26px; overflow: hidden; transition: border-color var(--dur), transform var(--dur) var(--ease-out), box-shadow var(--dur); }
+.tile-xl { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; justify-content: flex-end;
+  background:
+    radial-gradient(120% 80% at 100% 0%, color-mix(in srgb, var(--primary) 26%, transparent), transparent 60%),
+    radial-gradient(80% 60% at 0% 100%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%),
+    var(--surface);
+}
+.tile-xl h3 { font-size: clamp(26px, 3vw, 34px); }
+.tile-xl p { font-size: 16.5px; max-width: 44ch; }
+.tile-wide { grid-column: span 2; }
+.tile-tag { position: absolute; top: 22px; inset-inline-end: 22px; padding: 5px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.also { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 28px; }
+.also-label { color: var(--muted); font-size: 14px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li { padding: 6px 13px; border-radius: 999px; font-size: 13.5px; background: var(--surface-2); border: 1px solid var(--border); }
+
+/* ---------- Timeline ---------- */
+.timeline { position: relative; max-width: 900px; margin-inline: auto; display: grid; gap: 22px; }
+.timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; inset-inline-start: 168px; width: 2px; background: linear-gradient(180deg, var(--primary), var(--accent) 60%, transparent); opacity: .55; }
+.tl-item { display: grid; grid-template-columns: 150px 1fr; gap: 38px; position: relative; }
+.tl-item::before { content: ""; position: absolute; top: 24px; inset-inline-start: 162px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 3px solid var(--primary-2); box-shadow: 0 0 0 5px color-mix(in srgb, var(--primary) 18%, transparent); }
+.tl-item:first-child::before { border-color: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 22%, transparent), 0 0 18px var(--accent); }
+.tl-date { padding-top: 18px; font-size: 14px; font-weight: 600; color: var(--muted); text-align: end; font-variant-numeric: tabular-nums; }
+.tl-card { padding: 24px 26px; }
+.tl-card h3 { font-size: 19px; font-weight: 600; }
+.tl-org { margin-top: 6px; color: var(--accent); font-size: 14.5px; font-weight: 500; }
+.tl-card ul { margin-top: 14px; display: grid; gap: 8px; }
+.tl-card li { position: relative; padding-inline-start: 20px; color: var(--muted); font-size: 15px; }
+.tl-card li::before { content: ""; position: absolute; inset-inline-start: 2px; top: .7em; width: 7px; height: 7px; border-radius: 2px; background: var(--primary-2); transform: rotate(45deg); }
+
+/* ---------- Projects ---------- */
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.project { padding: 26px; display: flex; flex-direction: column; gap: 12px; transition: border-color var(--dur), transform var(--dur) var(--ease-out), box-shadow var(--dur); }
+.project h3 { font-size: 18px; font-weight: 600; line-height: 1.35; }
+.project p:last-child { color: var(--muted); font-size: 15px; }
+.project-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; color: var(--muted); }
+.pill { padding: 4px 11px; border-radius: 999px; font-size: 12.5px; font-weight: 600; border: 1px solid var(--border-strong); color: var(--icon-fg); }
+.pill-live { color: var(--success) !important; border-color: color-mix(in srgb, var(--success) 50%, transparent); background: color-mix(in srgb, var(--success) 10%, transparent); }
+
+/* ---------- Clients marquee ---------- */
+.clients { padding-bottom: clamp(48px, 7vw, 88px); }
+.marquee { display: flex; overflow: hidden; gap: 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+.marquee-list { display: flex; flex: none; gap: 12px; padding-inline-end: 12px; animation: marquee 60s linear infinite; }
+.marquee:hover .marquee-list { animation-play-state: paused; }
+[dir="rtl"] .marquee-list { animation-name: marquee-rtl; }
+.marquee-list li { white-space: nowrap; padding: 14px 22px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); font-family: var(--font-display); font-weight: 500; font-size: 15.5px; }
+
+/* ---------- Skills / certs ---------- */
+.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.skill-group { padding: 24px; }
+.skill-group h3 { font-size: 16px; font-weight: 600; margin-bottom: 14px; }
+.sub-title { display: flex; align-items: center; gap: 10px; margin: 56px 0 20px; font-size: 22px; font-weight: 600; }
+.sub-title .ic { color: var(--accent); }
+.certs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.cert { padding: 18px 20px; display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 2px; align-items: start; transition: border-color var(--dur); }
+.cert:hover { border-color: var(--border-strong); }
+.cert-year { grid-row: span 2; padding: 4px 9px; border-radius: 8px; font-size: 12.5px; font-weight: 700; font-variant-numeric: tabular-nums; background: var(--surface-2); border: 1px solid var(--border); color: var(--icon-fg); }
+.cert-name { font-weight: 600; font-size: 15px; line-height: 1.4; }
+.cert-org { color: var(--muted); font-size: 13.5px; }
+.cert-hl { border-color: color-mix(in srgb, var(--accent) 50%, transparent); background: linear-gradient(140deg, color-mix(in srgb, var(--accent) 10%, transparent), var(--surface)); }
+.cert-hl .cert-year { color: var(--accent); }
+[dir="rtl"] .cert-name, [dir="rtl"] .cert-org { direction: ltr; text-align: right; }
+.edu { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 40px; }
+.edu-item { display: flex; gap: 16px; align-items: flex-start; padding: 22px 24px; }
+.edu-item h3 { font-size: 17px; font-weight: 600; }
+.edu-item p { margin-top: 4px; color: var(--muted); font-size: 15px; }
+
+/* ---------- Contact ---------- */
+.contact-card {
+  position: relative; text-align: center; padding: clamp(40px, 7vw, 80px) clamp(20px, 5vw, 64px); border-radius: 32px; overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background:
+    radial-gradient(70% 90% at 50% 0%, color-mix(in srgb, var(--primary) 24%, transparent), transparent 70%),
+    radial-gradient(60% 60% at 50% 120%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+    var(--surface);
+  backdrop-filter: blur(16px);
+}
+.contact-card .eyebrow { color: var(--success); }
+.contact-title { margin-top: 16px; font-size: clamp(32px, 5vw, 56px); font-weight: 700; }
+.contact-card .section-sub { margin-inline: auto; }
+.contact-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 32px; }
+.contact-actions .btn span { direction: ltr; }
+.email-text { user-select: all; }
+.toast { min-height: 24px; margin-top: 16px; color: var(--success); font-size: 14px; font-weight: 600; }
+
+/* ---------- Footer ---------- */
+.footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); font-size: 14px; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+/* ---------- Reveal ---------- */
+.js .reveal { transform: translateY(14px); transition: transform var(--dur-slow) var(--ease-out); }
+.js .reveal.in { transform: none; }
+
+/* ---------- Keyframes ---------- */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes ping { 0% { transform: scale(.6); opacity: .7; } 100% { transform: scale(1.8); opacity: 0; } }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); } 70% { box-shadow: 0 0 0 8px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+@keyframes marquee { to { transform: translateX(-100%); } }
+@keyframes marquee-rtl { to { transform: translateX(100%); } }
+@keyframes dots { 0% { width: 9px; } 33% { width: 18px; } 66%, 100% { width: 27px; } }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .nav-links { display: none; }
+  .menu-btn { display: inline-flex; }
+  .cards-4 { grid-template-columns: repeat(2, 1fr); }
+  .bento { grid-template-columns: repeat(2, 1fr); }
+  .tile-xl { grid-row: auto; min-height: 280px; }
+  .projects { grid-template-columns: repeat(2, 1fr); }
+  .certs { grid-template-columns: repeat(2, 1fr); }
+  .ask-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 820px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 340px; order: -1; }
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .metric:nth-child(3) { border-inline-start: 0; }
+  .metric:nth-child(n+3) { border-top: 1px solid var(--border); }
+  .timeline::before { inset-inline-start: 6px; }
+  .tl-item { grid-template-columns: 1fr; gap: 8px; padding-inline-start: 32px; }
+  .tl-item::before { inset-inline-start: 0; top: 4px; }
+  .tl-date { text-align: start; padding-top: 0; }
+  .skills, .edu { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .nav-cta { display: none; }
+  .brand-name { display: none; }
+  .cards-4, .bento, .projects, .certs { grid-template-columns: 1fr; }
+  .tile-xl, .tile-wide { grid-column: auto; }
+  .hero-cta .btn, .contact-actions .btn { width: 100%; }
+  .chip-1 { inset-inline-start: 0; }
+  .chip-2 { inset-inline-end: 0; }
+  .typer { white-space: normal; }
+  .metric { padding: 22px 18px; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .js .reveal { transform: none; }
+  .marquee { flex-wrap: wrap; justify-content: center; -webkit-mask-image: none; mask-image: none; }
+  .marquee-list { flex-wrap: wrap; justify-content: center; padding: 0 20px; }
+  #marqueeClone { display: none; }
+}
+
+</style>
+  <script>
+    (function () {
+      var d = document.documentElement, t = null, l = null;
+      try { t = localStorage.getItem('am-theme'); l = localStorage.getItem('am-lang'); } catch (e) {}
+      var q = new URLSearchParams(location.search).get('lang');
+      if (q === 'ar' || q === 'en') l = q;
+      if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+      if (l === 'ar') { d.setAttribute('lang', 'ar'); d.setAttribute('dir', 'rtl'); }
+    })();
+  </script>
+<!-- Icon sprite (Lucide-style, stroke icons) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-cycle" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98M15.41 6.51l-6.82 3.98"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.48 12.89 1.51 8.53a.5.5 0 0 1-.81.47l-3.58-2.69a1 1 0 0 0-1.2 0l-3.59 2.69a.5.5 0 0 1-.81-.47l1.51-8.53"/><circle cx="12" cy="8" r="6"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0zM22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/></symbol>
+      <symbol id="i-steth" viewBox="0 0 24 24"><path d="M11 2v2M5 2v2M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas id="neural" aria-hidden="true"></canvas>
+  <div class="bg-aura" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Ahmed Moustafa — home">
+        <span class="brand-mark">AM</span>
+        <span class="brand-name"><span data-i18n="brand">Ahmed Moustafa</span><span class="pulse-dot" aria-hidden="true"></span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#expertise" data-i18n="nav_expertise">Expertise</a>
+        <a href="#platforms" data-i18n="nav_ai">AI Platforms</a>
+        <a href="#journey" data-i18n="nav_journey">Journey</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#credentials" data-i18n="nav_credentials">Credentials</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="langBtn" type="button" aria-label="Switch to Arabic">
+          <svg class="ic"><use href="#i-globe"/></svg><span class="lang-label">ع</span>
+        </button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch to light theme">
+          <svg class="ic ic-sun"><use href="#i-sun"/></svg><svg class="ic ic-moon"><use href="#i-moon"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_cta">Let's talk</a>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+          <svg class="ic"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="drawer" id="drawer" hidden>
+      <a href="#expertise" data-i18n="nav_expertise">Expertise</a>
+      <a href="#platforms" data-i18n="nav_ai">AI Platforms</a>
+      <a href="#journey" data-i18n="nav_journey">Journey</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#credentials" data-i18n="nav_credentials">Credentials</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav_cta">Let's talk</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status reveal">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span data-i18n="hero_status">Now leading the RCM implementation at KAUH, Jeddah</span>
+          </p>
+          <h1 class="hero-title reveal">
+            <span data-i18n="hero_hi">Ahmed Moustafa</span>
+          </h1>
+          <p class="hero-role reveal">
+            <span data-i18n="hero_role_prefix">Building the intelligent hospital through</span>
+            <span class="typer" aria-live="off"><span class="typer-text" id="typer">Revenue Cycle Management</span><span class="caret" aria-hidden="true"></span></span>
+          </p>
+          <p class="hero-lead reveal" data-i18n="hero_lead">Senior Specialist in Healthcare IT and Digital Health. For 16+ years I have helped Saudi hospitals run smarter: implementing RCM and HIS platforms, integrating NPHIES, and bringing AI-driven tools into everyday clinical and financial work.</p>
+          <div class="hero-cta reveal">
+            <a href="#contact" class="btn btn-primary"><span data-i18n="hero_cta1">Start a conversation</span><svg class="ic flip"><use href="#i-arrow"/></svg></a>
+            <a href="#ask" class="btn btn-ghost"><svg class="ic"><use href="#i-spark"/></svg><span data-i18n="hero_cta2">Ask my profile</span></a>
+          </div>
+          <ul class="hero-badges reveal" aria-label="Highlights">
+            <li><svg class="ic"><use href="#i-award"/></svg><span data-i18n="badge1">NPHIES Champion</span></li>
+            <li><svg class="ic"><use href="#i-pin"/></svg><span data-i18n="badge2">Riyadh, Saudi Arabia</span></li>
+            <li><svg class="ic"><use href="#i-shield"/></svg><span data-i18n="badge3">ITIL V4 · JCI · CBAHI</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <span class="sat sat-a">RCM</span>
+          <span class="sat sat-b">NPHIES</span>
+          <span class="sat sat-c">AI</span>
+          <div class="portrait">
+            <span class="portrait-mono">AM</span>
+            <img src="assets/img/ahmed.webp" alt="" width="480" height="480" id="portraitImg">
+          </div>
+          <div class="hero-chip chip-1"><strong>−30%</strong><span data-i18n="chip1">claim denials</span></div>
+          <div class="hero-chip chip-2"><strong>8+</strong><span data-i18n="chip2">hospital go-lives</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IMPACT ============ -->
+    <section class="impact" id="impact" aria-labelledby="impact-h">
+      <div class="container">
+        <h2 id="impact-h" class="sr-only" data-i18n="impact_h">Impact in numbers</h2>
+        <div class="metrics">
+          <div class="metric reveal"><p class="metric-num"><span class="count" data-to="16">16</span>+</p><p class="metric-label" data-i18n="m1">Years in IT &amp; healthcare IT</p></div>
+          <div class="metric reveal"><p class="metric-num"><span class="count" data-to="8">8</span>+</p><p class="metric-label" data-i18n="m2">Hospitals with RCM go-lives</p></div>
+          <div class="metric reveal"><p class="metric-num"><span class="count" data-to="350">350</span>+</p><p class="metric-label" data-i18n="m3">Hospital staff trained</p></div>
+          <div class="metric reveal"><p class="metric-num"><span class="count" data-to="30">30</span>%</p><p class="metric-label" data-i18n="m4">Fewer claim denials per hospital</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ASK MY PROFILE ============ -->
+    <section class="section" id="ask" aria-labelledby="ask-h">
+      <div class="container ask-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow"><svg class="ic"><use href="#i-spark"/></svg><span data-i18n="ask_eyebrow">Ask my profile</span></p>
+          <h2 id="ask-h" class="section-title" data-i18n="ask_title">Get answers in seconds</h2>
+          <p class="section-sub" data-i18n="ask_sub">Pick a question. The answers come straight from my career record, no searching through a PDF.</p>
+        </div>
+        <div class="console reveal">
+          <div class="console-bar" aria-hidden="true">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="console-title">ahmed.profile</span>
+          </div>
+          <div class="console-body">
+            <div class="msg msg-user" id="askQ" hidden></div>
+            <div class="msg msg-ai" aria-live="polite">
+              <span class="ai-avatar" aria-hidden="true"><svg class="ic"><use href="#i-spark"/></svg></span>
+              <p id="askA" data-i18n="ask_intro">Hi! I'm Ahmed's profile assistant. Choose one of the questions below.</p>
+            </div>
+          </div>
+          <div class="chips" role="group" aria-label="Suggested questions">
+            <button type="button" class="chip" data-q="1" data-i18n="q1">What's your RCM track record?</button>
+            <button type="button" class="chip" data-q="2" data-i18n="q2">Are you NPHIES certified?</button>
+            <button type="button" class="chip" data-q="3" data-i18n="q3">Which AI tools do you deliver?</button>
+            <button type="button" class="chip" data-q="4" data-i18n="q4">What are you working on now?</button>
+            <button type="button" class="chip" data-q="5" data-i18n="q5">How can I reach you?</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE ============ -->
+    <section class="section" id="expertise" aria-labelledby="exp-h">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span data-i18n="exp_eyebrow">What I do</span></p>
+          <h2 id="exp-h" class="section-title" data-i18n="exp_title">Four disciplines, one goal: a hospital that runs on clean data</h2>
+        </div>
+        <div class="cards-4">
+          <article class="card reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-cycle"/></svg></span>
+            <h3 data-i18n="c1_t">Revenue Cycle Management</h3>
+            <p data-i18n="c1_d">End-to-end RCM delivery: workflow design, configuration, integration and go-live. The result is faster claims and fewer denials.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-share"/></svg></span>
+            <h3 data-i18n="c2_t">HIS &amp; NPHIES Integration</h3>
+            <p data-i18n="c2_d">Deploying hospital information systems and connecting them to NPHIES with HL7/FHIR APIs, in line with CHI and Saudi regulations.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-cpu"/></svg></span>
+            <h3 data-i18n="c3_t">AI-Driven Health Platforms</h3>
+            <p data-i18n="c3_d">Rolling out AI medical coding, clinical documentation and decision support, so intelligence becomes part of daily hospital work.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-shield"/></svg></span>
+            <h3 data-i18n="c4_t">IT Operations &amp; Security</h3>
+            <p data-i18n="c4_d">Infrastructure, ITIL service management, access control and JCI/CBAHI readiness, built on 16 years of hands-on operations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI PLATFORMS ============ -->
+    <section class="section section-alt" id="platforms" aria-labelledby="ai-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><svg class="ic"><use href="#i-spark"/></svg><span data-i18n="ai_eyebrow">The intelligent stack</span></p>
+          <h2 id="ai-h" class="section-title" data-i18n="ai_title">AI platforms I deliver to hospitals</h2>
+          <p class="section-sub" data-i18n="ai_sub">I implement these systems at client sites, from configuration and integration through staff training and go-live.</p>
+        </div>
+        <div class="bento">
+          <article class="tile tile-xl reveal">
+            <span class="tile-tag" data-i18n="tag_his">AI-driven HIS</span>
+            <span class="card-icon"><svg class="ic"><use href="#i-layers"/></svg></span>
+            <h3>KLIXA HIS</h3>
+            <p data-i18n="ai1">A Health Information System with AI built in. It connects clinical, administrative and financial workflows on one platform.</p>
+          </article>
+          <article class="tile reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-code"/></svg></span>
+            <h3>CORE AutoCode</h3>
+            <p data-i18n="ai2">AI medical coding that turns clinical notes into accurate codes.</p>
+          </article>
+          <article class="tile reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-mic"/></svg></span>
+            <h3>CORE Scribe</h3>
+            <p data-i18n="ai3">AI clinical documentation that gives physicians time back with patients.</p>
+          </article>
+          <article class="tile reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-steth"/></svg></span>
+            <h3>CORE CDSS</h3>
+            <p data-i18n="ai4">Clinical decision support at the point of care.</p>
+          </article>
+          <article class="tile reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-gauge"/></svg></span>
+            <h3>CORE Triage</h3>
+            <p data-i18n="ai5">Intelligent patient triage and prioritisation.</p>
+          </article>
+          <article class="tile tile-wide reveal">
+            <span class="card-icon"><svg class="ic"><use href="#i-swap"/></svg></span>
+            <h3>CORE Mapping</h3>
+            <p data-i18n="ai6">Automated code mapping from SBS V2 to SBS V3 for a smooth transition to the national billing standard.</p>
+          </article>
+        </div>
+        <div class="also reveal">
+          <p class="also-label" data-i18n="also">Also hands-on with</p>
+          <ul class="tags">
+            <li>NPHIES</li><li>Cerner</li><li>DMS IDMS / HIBS</li><li>BIT B-Health</li><li>DXC HIS</li><li>HL7 / FHIR</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section" id="journey" aria-labelledby="jr-h">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span data-i18n="jr_eyebrow">Career journey</span></p>
+          <h2 id="jr-h" class="section-title" data-i18n="jr_title">From the help desk to leading hospital transformation</h2>
+        </div>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-date" data-i18n="e1_date">Feb 2024 — Present</div>
+            <div class="tl-card">
+              <h3 data-i18n="e1_role">Senior Specialist — Healthcare IT, Digital Health &amp; Project Implementation</h3>
+              <p class="tl-org" data-i18n="e1_org">CORE Transformation · Riyadh</p>
+              <ul data-i18n="e1_pts"><li>Lead RCM implementations at KAUH Jeddah, KFUH Khobar and MOD Hospitals, each delivered in 2–3 months with a team of 5.</li><li>Cut claim denial rates by 30% at every hospital where the RCM system went live.</li><li>Direct cross-functional teams deploying HIS and integrating NPHIES in line with Saudi regulations.</li></ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date" data-i18n="e2_date">Nov 2017 — Feb 2024</div>
+            <div class="tl-card">
+              <h3 data-i18n="e2_role">IT Manager — Digital Health</h3>
+              <p class="tl-org" data-i18n="e2_org">Selat for Business Solutions · Saudi Arabia</p>
+              <ul data-i18n="e2_pts"><li>Led the SELAT · CHI · NPHIES Champions initiative and became a certified champion.</li><li>Led the RCM implementation at KFMC and supported claims and billing platforms at KFMC, KFUH, KAUH and Sigal Dental.</li><li>Ran IT operations for 60+ employees and built the teams that delivered hospital go-lives.</li></ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date" data-i18n="e3_date">Nov 2013 — Nov 2017</div>
+            <div class="tl-card">
+              <h3 data-i18n="e3_role">IT System Administrator</h3>
+              <p class="tl-org" data-i18n="e3_org">Al-Mouwasat Health Care · Riyadh &amp; Dammam</p>
+              <ul data-i18n="e3_pts"><li>Managed 600+ users, 7 servers, networks and clinical devices for a leading private hospital group.</li><li>Took part in the HIS implementation at Al-Mouwasat Hospital Riyadh and kept critical systems running.</li><li>Prepared IT systems for JCI and CBAHI accreditation.</li></ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date" data-i18n="e4_date">2009 — 2013</div>
+            <div class="tl-card">
+              <h3 data-i18n="e4_role">Foundations in IT infrastructure</h3>
+              <p class="tl-org" data-i18n="e4_org">Rixos Sharm El Sheikh · United Systems · WHO EMRO · Egypt</p>
+              <ul data-i18n="e4_pts"><li>IT Supervisor at Rixos Sharm El Sheikh: help desk, WAN/LAN, firewall and voice systems.</li><li>Senior Technical Support at United Systems Co.</li><li>Help Desk Intern at the World Health Organization, Regional Office for the Eastern Mediterranean.</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects" aria-labelledby="pr-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span data-i18n="pr_eyebrow">Selected projects</span></p>
+          <h2 id="pr-h" class="section-title" data-i18n="pr_title">Go-lives that changed how hospitals get paid</h2>
+        </div>
+        <div class="projects">
+          <article class="project reveal">
+            <p class="project-meta"><span class="pill pill-live" data-i18n="live">In progress</span><span data-i18n="p1_m">Jun 2025 — Present</span></p>
+            <h3 data-i18n="p1_t">RCM Implementation · King Abdulaziz University Hospital, Jeddah</h3>
+            <p data-i18n="p1_d">Installation, configuration, workflow optimisation and integration with the existing HIS, plus end-user training and testing across billing and claims.</p>
+          </article>
+          <article class="project reveal">
+            <p class="project-meta"><span class="pill" data-i18n="p2_m">CORE Transformation</span></p>
+            <h3 data-i18n="p2_t">RCM Implementation · MOD Hospitals</h3>
+            <p data-i18n="p2_d">Full RCM deployment: configuration, workflow redesign, HIS integration, staff training and testing.</p>
+          </article>
+          <article class="project reveal">
+            <p class="project-meta"><span class="pill" data-i18n="p3_m">Nov 2017 — Jan 2018</span></p>
+            <h3 data-i18n="p3_t">RCM Implementation · King Fahad Medical City, Riyadh</h3>
+            <p data-i18n="p3_d">Led the rollout from installation to go-live, integrating with the existing HIS and training end users.</p>
+          </article>
+          <article class="project reveal">
+            <p class="project-meta"><span class="pill" data-i18n="p4_m">May 2024 — Present</span></p>
+            <h3 data-i18n="p4_t">SELAT · CHI · NPHIES Champions</h3>
+            <p data-i18n="p4_d">Certified champion for NPHIES, the national health information exchange platform, with the Council of Health Insurance.</p>
+          </article>
+          <article class="project reveal">
+            <p class="project-meta"><span class="pill" data-i18n="p5_m">Apr — Aug 2014</span></p>
+            <h3 data-i18n="p5_t">HIS Implementation · Al-Mouwasat Hospital, Riyadh</h3>
+            <p data-i18n="p5_d">Application setup, deployment and ongoing support for clinical and administrative departments.</p>
+          </article>
+          <article class="project reveal">
+            <p class="project-meta"><span class="pill" data-i18n="p6_m">Jan — Jun 2013</span></p>
+            <h3 data-i18n="p6_t">Network Upgrade · Four Seasons Hotel Nile Plaza</h3>
+            <p data-i18n="p6_d">Upgraded and extended the hotel's internal network infrastructure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLIENTS ============ -->
+    <section class="section clients" id="clients" aria-labelledby="cl-h">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span data-i18n="cl_eyebrow">Trusted by</span></p>
+          <h2 id="cl-h" class="section-title" data-i18n="cl_title">Hospitals and health organisations I have served</h2>
+        </div>
+      </div>
+      <div class="marquee reveal">
+        <ul class="marquee-list" data-i18n="clients"><li>King Abdulaziz University Hospital</li><li>King Fahad Medical City</li><li>Prince Sultan Military Medical City</li><li>King Fahad Hospital of the University</li><li>MOD Hospitals</li><li>King Abdullah Medical City</li><li>Qassim University</li><li>University Dental Hospital</li><li>Aljouf Health Cluster</li><li>Madinah Medical Complex</li><li>Seashell Hospital</li><li>NMC</li><li>KIMS Bahrain Medical Centre</li><li>Al-Yasmin Polyclinic</li><li>Al Rashidiyah Polyclinic</li><li>Sigal Dental Clinic</li></ul>
+        <ul class="marquee-list" aria-hidden="true" id="marqueeClone"></ul>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="section section-alt" id="credentials" aria-labelledby="cr-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span data-i18n="cr_eyebrow">Skills &amp; credentials</span></p>
+          <h2 id="cr-h" class="section-title" data-i18n="cr_title">Clinical systems knowledge on top of solid IT engineering</h2>
+        </div>
+
+        <div class="skills reveal">
+          <div class="skill-group"><h3 data-i18n="s1">Healthcare systems</h3><ul class="tags"><li>HIS / EHR</li><li>RCM</li><li data-i18n="s1_claims">Claims management</li><li data-i18n="s1_ins">Health insurance</li><li>NPHIES</li><li>Cerner</li><li>HL7 / FHIR</li><li data-i18n="s1_dh">Digital health</li></ul></div>
+          <div class="skill-group"><h3 data-i18n="s2">Project delivery</h3><ul class="tags"><li data-i18n="s2_a">Healthcare IT implementation</li><li data-i18n="s2_b">Cross-functional leadership</li><li data-i18n="s2_c">Vendor management</li><li data-i18n="s2_d">Staff training</li><li>JCI · CBAHI</li></ul></div>
+          <div class="skill-group"><h3 data-i18n="s3">IT service management</h3><ul class="tags"><li>ITIL V4</li><li data-i18n="s3_a">IT operations</li><li data-i18n="s3_b">Incident management</li><li data-i18n="s3_c">Backup &amp; recovery</li><li data-i18n="s3_d">Security &amp; access control</li></ul></div>
+          <div class="skill-group"><h3 data-i18n="s4">Infrastructure &amp; cloud</h3><ul class="tags"><li>Windows Server</li><li>Active Directory</li><li>Exchange</li><li>Citrix</li><li>Cisco</li><li>FortiGate</li><li>AWS</li><li>Huawei Cloud</li><li>Python</li></ul></div>
+        </div>
+
+        <h3 class="sub-title reveal"><svg class="ic"><use href="#i-award"/></svg><span data-i18n="certs_h">Certifications &amp; training</span></h3>
+        <ul class="certs">
+          <li class="cert reveal"><span class="cert-year">2025</span><p class="cert-name">AWS Essentials</p><p class="cert-org">Udemy · Learnify IT</p></li>
+          <li class="cert reveal"><span class="cert-year">2024</span><p class="cert-name">Huawei Certified Cloud Developer Associate</p><p class="cert-org">Huawei Cloud Middle East</p></li>
+          <li class="cert reveal"><span class="cert-year">2024</span><p class="cert-name">Health Information Technology Fundamentals</p><p class="cert-org">Johns Hopkins University</p></li>
+          <li class="cert reveal cert-hl"><span class="cert-year">2024</span><p class="cert-name">NPHIES Platform Qualification</p><p class="cert-org">NPHIES Academy · Council of Health Insurance</p></li>
+          <li class="cert reveal"><span class="cert-year">2024</span><p class="cert-name">ITIL® V4 Foundation</p><p class="cert-org">Simplilearn</p></li>
+          <li class="cert reveal"><span class="cert-year">2024</span><p class="cert-name">SC-400: Information Protection in Microsoft 365</p><p class="cert-org">Microsoft Learn</p></li>
+          <li class="cert reveal"><span class="cert-year">2023</span><p class="cert-name">Introduction to Digital Health</p><p class="cert-org">Imperial College London</p></li>
+          <li class="cert reveal"><span class="cert-year">2023</span><p class="cert-name">Health Care IT: Challenges and Opportunities</p><p class="cert-org">Icahn School of Medicine at Mount Sinai</p></li>
+          <li class="cert reveal"><span class="cert-year">2023</span><p class="cert-name">Healthcare Finance &amp; RCM: Transformation 2030</p><p class="cert-org">HFMA · Global Health Exhibition</p></li>
+          <li class="cert reveal"><span class="cert-year">2023</span><p class="cert-name">Programming for Everybody (Python)</p><p class="cert-org">University of Michigan</p></li>
+          <li class="cert reveal"><span class="cert-year">2023</span><p class="cert-name">Technical Support Fundamentals</p><p class="cert-org">Google</p></li>
+          <li class="cert reveal"><span class="cert-year">2019</span><p class="cert-name">Citrix Certified Associate — Virtualization</p><p class="cert-org">Citrix</p></li>
+          <li class="cert reveal"><span class="cert-year">2013</span><p class="cert-name">MCSA: Windows Server 2008</p><p class="cert-org">Microsoft</p></li>
+          <li class="cert reveal"><span class="cert-year">2010</span><p class="cert-name">MCITP: Enterprise Administrator</p><p class="cert-org">Microsoft</p></li>
+          <li class="cert reveal"><span class="cert-year">2009</span><p class="cert-name">Cisco Certified Network Associate (CCNA)</p><p class="cert-org">Cisco</p></li>
+        </ul>
+
+        <div class="edu reveal">
+          <div class="edu-item">
+            <span class="card-icon"><svg class="ic"><use href="#i-cap"/></svg></span>
+            <div><h3 data-i18n="edu_t">Bachelor of Management Information Systems</h3><p data-i18n="edu_d">Cairo, Egypt · 2010 · Graduation project graded Excellent</p></div>
+          </div>
+          <div class="edu-item">
+            <span class="card-icon"><svg class="ic"><use href="#i-globe"/></svg></span>
+            <div><h3 data-i18n="lang_t">Languages</h3><p data-i18n="lang_d">Arabic (native) · English (professional working proficiency)</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="ct-h">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span><span data-i18n="ct_eyebrow">Open to new opportunities</span></p>
+          <h2 id="ct-h" class="contact-title" data-i18n="ct_title">Let's build your next intelligent hospital</h2>
+          <p class="section-sub" data-i18n="ct_sub">Planning an RCM rollout, NPHIES integration or AI in healthcare? I'd like to hear about it.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg" href="mailto:ahmedmostafa150@gmail.com"><svg class="ic"><use href="#i-mail"/></svg><span class="email-text" id="emailText">ahmedmostafa150@gmail.com</span></a>
+            <button class="btn btn-ghost btn-lg" type="button" id="copyEmail" data-email="ahmedmostafa150@gmail.com"><svg class="ic ic-copy"><use href="#i-copy"/></svg><span data-i18n="copy">Copy email</span></button>
+            <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/ahmad-moustafa" target="_blank" rel="noopener"><svg class="ic"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a>
+          </div>
+          <p class="toast" id="toast" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> <span data-i18n="brand">Ahmed Moustafa</span>. <span data-i18n="rights">All rights reserved.</span></p>
+      <p class="footer-note" data-i18n="footer_note">Healthcare IT · Digital Health · RCM · NPHIES</p>
+    </div>
+  </footer>
+
+  <script>
+/* Arabic strings. English is read from the HTML itself on first load. */
+window.I18N_AR = {
+  skip: "تخطَّ إلى المحتوى",
+  brand: "أحمد مصطفى",
+  nav_expertise: "التخصصات",
+  nav_ai: "منصات الذكاء الاصطناعي",
+  nav_journey: "المسيرة",
+  nav_projects: "المشاريع",
+  nav_credentials: "الشهادات",
+  nav_cta: "تواصل معي",
+
+  hero_status: "أقود حاليًا تطبيق نظام دورة الإيرادات في مستشفى جامعة الملك عبدالعزيز بجدة",
+  hero_hi: "أحمد مصطفى",
+  hero_role_prefix: "أبني المستشفى الذكي عبر",
+  hero_lead: "أخصائي أول في تقنية المعلومات الصحية والصحة الرقمية. على مدى أكثر من 16 عامًا ساعدت مستشفيات المملكة على العمل بذكاء أكبر: أطبّق أنظمة دورة الإيرادات (RCM) وأنظمة المعلومات الصحية (HIS)، وأربطها بمنصة نفيس، وأُدخل أدوات الذكاء الاصطناعي في العمل السريري والمالي اليومي.",
+  hero_cta1: "ابدأ محادثة",
+  hero_cta2: "اسأل ملفي المهني",
+  badge1: "سفير منصة نفيس المعتمد",
+  badge2: "الرياض، المملكة العربية السعودية",
+  badge3: "ITIL V4 · JCI · سباهي",
+  chip1: "انخفاض في رفض المطالبات",
+  chip2: "مستشفيات تم تشغيلها",
+
+  impact_h: "الأثر بالأرقام",
+  m1: "عامًا في تقنية المعلومات والصحة الرقمية",
+  m2: "مستشفيات طُبّق فيها نظام دورة الإيرادات",
+  m3: "موظفًا من الكوادر الصحية تم تدريبهم",
+  m4: "انخفاضًا في رفض المطالبات بكل مستشفى",
+
+  ask_eyebrow: "اسأل ملفي المهني",
+  ask_title: "إجابات خلال ثوانٍ",
+  ask_sub: "اختر سؤالًا، وستأتيك الإجابة مباشرة من سجلي المهني دون الحاجة للبحث في ملف PDF.",
+  ask_intro: "أهلًا! أنا مساعد الملف المهني لأحمد. اختر أحد الأسئلة بالأسفل.",
+  q1: "ما خبرتك في دورة الإيرادات؟",
+  q2: "هل أنت معتمد في نفيس؟",
+  q3: "ما أدوات الذكاء الاصطناعي التي تطبّقها؟",
+  q4: "على ماذا تعمل الآن؟",
+  q5: "كيف أتواصل معك؟",
+
+  exp_eyebrow: "ماذا أقدّم",
+  exp_title: "أربعة تخصصات وهدف واحد: مستشفى يعمل ببيانات دقيقة",
+  c1_t: "إدارة دورة الإيرادات",
+  c1_d: "تطبيق متكامل لأنظمة دورة الإيرادات: تصميم سير العمل والإعداد والربط حتى التشغيل الفعلي، والنتيجة مطالبات أسرع ورفض أقل.",
+  c2_t: "أنظمة المعلومات الصحية والربط مع نفيس",
+  c2_d: "نشر أنظمة المعلومات الصحية وربطها بمنصة نفيس عبر واجهات HL7/FHIR، بما يتوافق مع اشتراطات مجلس الضمان الصحي والأنظمة السعودية.",
+  c3_t: "منصات صحية مدعومة بالذكاء الاصطناعي",
+  c3_d: "تطبيق حلول الترميز الطبي الآلي والتوثيق السريري ودعم القرار، ليصبح الذكاء الاصطناعي جزءًا من العمل اليومي في المستشفى.",
+  c4_t: "عمليات تقنية المعلومات وأمنها",
+  c4_d: "البنية التحتية وإدارة الخدمات وفق ITIL وضبط الصلاحيات والجاهزية لاعتماد JCI وسباهي، بخبرة تشغيلية عملية تمتد 16 عامًا.",
+
+  ai_eyebrow: "المنظومة الذكية",
+  ai_title: "منصات ذكاء اصطناعي أطبّقها في المستشفيات",
+  ai_sub: "أتولّى تطبيق هذه الأنظمة لدى العملاء، من الإعداد والربط إلى تدريب الموظفين والتشغيل الفعلي.",
+  tag_his: "نظام صحي ذكي",
+  ai1: "نظام معلومات صحية مبني بالذكاء الاصطناعي، يربط سير العمل السريري والإداري والمالي في منصة واحدة.",
+  ai2: "ترميز طبي آلي يحوّل الملاحظات السريرية إلى أكواد دقيقة.",
+  ai3: "توثيق سريري بالذكاء الاصطناعي يمنح الأطباء وقتًا أكبر مع مرضاهم.",
+  ai4: "دعم القرار السريري في نقطة تقديم الرعاية.",
+  ai5: "فرز ذكي للمرضى وتحديد أولوياتهم.",
+  ai6: "تحويل آلي للأكواد من SBS V2 إلى SBS V3 لانتقال سلس إلى معيار الفوترة الوطني.",
+  also: "وأعمل أيضًا على",
+
+  jr_eyebrow: "المسيرة المهنية",
+  jr_title: "من مكتب الدعم الفني إلى قيادة التحول في المستشفيات",
+  e1_date: "فبراير 2024 — الآن",
+  e1_role: "أخصائي أول — تقنية المعلومات الصحية والصحة الرقمية وتنفيذ المشاريع",
+  e1_org: "كور للتحول · الرياض",
+  e1_pts: "<li>أقود تطبيق أنظمة دورة الإيرادات في مستشفى جامعة الملك عبدالعزيز بجدة، ومستشفى الملك فهد الجامعي بالخبر، ومستشفيات وزارة الدفاع، خلال 2 إلى 3 أشهر لكل مستشفى بفريق من 5 أشخاص.</li><li>خفّضت نسبة رفض المطالبات بنسبة 30% في كل مستشفى تم تشغيل النظام فيه.</li><li>أدير فرق عمل متعددة التخصصات لنشر أنظمة المعلومات الصحية وربطها بنفيس وفق الأنظمة السعودية.</li>",
+  e2_date: "نوفمبر 2017 — فبراير 2024",
+  e2_role: "مدير تقنية المعلومات — الصحة الرقمية",
+  e2_org: "صلات لحلول الأعمال · المملكة العربية السعودية",
+  e2_pts: "<li>قدت مبادرة سفراء صلات · مجلس الضمان الصحي · نفيس، وحصلت على اعتماد سفير المنصة.</li><li>قدت تطبيق نظام دورة الإيرادات في مدينة الملك فهد الطبية، ودعمت أنظمة المطالبات والفوترة في عدة مستشفيات منها مستشفى الملك فهد الجامعي ومستشفى جامعة الملك عبدالعزيز وعيادة سيجال للأسنان.</li><li>أدرت عمليات تقنية المعلومات لأكثر من 60 موظفًا، وبنيت الفرق التي نفّذت مشاريع التشغيل في المستشفيات.</li>",
+  e3_date: "نوفمبر 2013 — نوفمبر 2017",
+  e3_role: "مدير أنظمة تقنية المعلومات",
+  e3_org: "المواساة للخدمات الطبية · الرياض والدمام",
+  e3_pts: "<li>أدرت أكثر من 600 مستخدم و7 خوادم والشبكات والأجهزة الطبية في إحدى أكبر مجموعات المستشفيات الخاصة.</li><li>شاركت في تطبيق نظام المعلومات الصحية في مستشفى المواساة بالرياض، وحافظت على استمرارية الأنظمة الحرجة.</li><li>جهّزت أنظمة تقنية المعلومات لاعتماد JCI وسباهي.</li>",
+  e4_date: "2009 — 2013",
+  e4_role: "التأسيس في البنية التحتية لتقنية المعلومات",
+  e4_org: "ريكسوس شرم الشيخ · يونايتد سيستمز · منظمة الصحة العالمية · مصر",
+  e4_pts: "<li>مشرف تقنية المعلومات في ريكسوس شرم الشيخ: الدعم الفني والشبكات والجدران النارية وأنظمة الاتصال.</li><li>دعم فني أول في شركة يونايتد سيستمز.</li><li>متدرب في الدعم الفني بالمكتب الإقليمي لمنظمة الصحة العالمية لشرق المتوسط.</li>",
+
+  pr_eyebrow: "مشاريع مختارة",
+  pr_title: "مشاريع غيّرت طريقة تحصيل المستشفيات لإيراداتها",
+  live: "قيد التنفيذ",
+  p1_m: "يونيو 2025 — الآن",
+  p1_t: "تطبيق دورة الإيرادات · مستشفى جامعة الملك عبدالعزيز، جدة",
+  p1_d: "التثبيت والإعداد وتحسين سير العمل والربط مع نظام المعلومات الصحية الحالي، إلى جانب تدريب المستخدمين واختبار عمليات الفوترة والمطالبات.",
+  p2_m: "كور للتحول",
+  p2_t: "تطبيق دورة الإيرادات · مستشفيات وزارة الدفاع",
+  p2_d: "تطبيق كامل لنظام دورة الإيرادات: الإعداد وإعادة تصميم سير العمل والربط مع نظام المعلومات الصحية وتدريب الموظفين والاختبار.",
+  p3_m: "نوفمبر 2017 — يناير 2018",
+  p3_t: "تطبيق دورة الإيرادات · مدينة الملك فهد الطبية، الرياض",
+  p3_d: "قدت المشروع من التثبيت حتى التشغيل الفعلي، مع الربط بنظام المعلومات الصحية وتدريب المستخدمين.",
+  p4_m: "مايو 2024 — الآن",
+  p4_t: "سفراء صلات · مجلس الضمان الصحي · نفيس",
+  p4_d: "سفير معتمد لمنصة نفيس، المنصة الوطنية لتبادل المعلومات الصحية، بالتعاون مع مجلس الضمان الصحي.",
+  p5_m: "أبريل — أغسطس 2014",
+  p5_t: "تطبيق نظام المعلومات الصحية · مستشفى المواساة، الرياض",
+  p5_d: "إعداد النظام ونشره ودعمه بشكل مستمر للأقسام السريرية والإدارية.",
+  p6_m: "يناير — يونيو 2013",
+  p6_t: "تطوير الشبكة · فندق فور سيزونز نايل بلازا",
+  p6_d: "تحديث البنية التحتية للشبكة الداخلية للفندق وتوسيعها.",
+
+  cl_eyebrow: "جهات وثقت بي",
+  cl_title: "مستشفيات وجهات صحية عملت معها",
+  clients: "<li>مستشفى جامعة الملك عبدالعزيز</li><li>مدينة الملك فهد الطبية</li><li>مدينة الأمير سلطان الطبية العسكرية</li><li>مستشفى الملك فهد الجامعي</li><li>مستشفيات وزارة الدفاع</li><li>مدينة الملك عبدالله الطبية</li><li>جامعة القصيم</li><li>مستشفى الأسنان الجامعي</li><li>تجمع الجوف الصحي</li><li>مجمع المدينة الطبي</li><li>مستشفى سي شل</li><li>NMC</li><li>مركز كيمز البحرين الطبي</li><li>مجمع الياسمين الطبي</li><li>مجمع الرشيدية الطبي</li><li>عيادة سيجال للأسنان</li>",
+
+  cr_eyebrow: "المهارات والشهادات",
+  cr_title: "معرفة بالأنظمة الصحية مبنية على أساس هندسي قوي في تقنية المعلومات",
+  s1: "الأنظمة الصحية",
+  s1_claims: "إدارة المطالبات",
+  s1_ins: "التأمين الصحي",
+  s1_dh: "الصحة الرقمية",
+  s2: "تنفيذ المشاريع",
+  s2_a: "تطبيق أنظمة تقنية المعلومات الصحية",
+  s2_b: "قيادة الفرق متعددة التخصصات",
+  s2_c: "إدارة الموردين",
+  s2_d: "تدريب الموظفين",
+  s3: "إدارة خدمات تقنية المعلومات",
+  s3_a: "عمليات تقنية المعلومات",
+  s3_b: "إدارة الحوادث",
+  s3_c: "النسخ الاحتياطي والاستعادة",
+  s3_d: "الأمن وضبط الصلاحيات",
+  s4: "البنية التحتية والحوسبة السحابية",
+  certs_h: "الشهادات والدورات",
+  edu_t: "بكالوريوس نظم المعلومات الإدارية",
+  edu_d: "القاهرة، مصر · 2010 · مشروع التخرج بتقدير ممتاز",
+  lang_t: "اللغات",
+  lang_d: "العربية (اللغة الأم) · الإنجليزية (إتقان مهني)",
+
+  ct_eyebrow: "متاح لفرص جديدة",
+  ct_title: "لنبنِ معًا مستشفاك الذكي القادم",
+  ct_sub: "تخطط لتطبيق نظام دورة الإيرادات أو الربط مع نفيس أو إدخال الذكاء الاصطناعي في الرعاية الصحية؟ يسعدني أن أسمع عن مشروعك.",
+  copy: "نسخ البريد",
+  rights: "جميع الحقوق محفوظة.",
+  footer_note: "تقنية المعلومات الصحية · الصحة الرقمية · دورة الإيرادات · نفيس"
+};
+
+/* Rotating words after "Building the intelligent hospital through" */
+window.TYPER_WORDS = {
+  en: ["Revenue Cycle Management", "NPHIES integration", "HIS implementation", "AI in healthcare"],
+  ar: ["إدارة دورة الإيرادات", "الربط مع نفيس", "تطبيق أنظمة المعلومات الصحية", "الذكاء الاصطناعي في الصحة"]
+};
+
+/* "Ask my profile" answers */
+window.ASK = {
+  en: {
+    1: "I have led RCM implementations at 8+ hospitals across Saudi Arabia, including KAUH Jeddah, KFMC Riyadh, KFUH Khobar and MOD Hospitals. Each go-live took 2–3 months with a team of 5, and claim denials dropped by about 30% at every site.",
+    2: "Yes. I completed the NPHIES Platform Qualification at the CHI NPHIES Academy, and I'm a certified champion through the SELAT · CHI · NPHIES Champions initiative.",
+    3: "KLIXA HIS (an AI-driven Health Information System), CORE AutoCode for AI medical coding, CORE Scribe for clinical documentation, CORE CDSS for decision support, CORE Triage, and CORE Mapping for SBS V2 to V3.",
+    4: "I'm leading the RCM system implementation at King Abdulaziz University Hospital in Jeddah with CORE Transformation, covering configuration, HIS integration, workflow optimisation and staff training.",
+    5: "The fastest way is email: ahmedmostafa150@gmail.com. You can also message me on LinkedIn at linkedin.com/in/ahmad-moustafa."
+  },
+  ar: {
+    1: "قدت تطبيق أنظمة دورة الإيرادات في أكثر من 8 مستشفيات بالمملكة، منها مستشفى جامعة الملك عبدالعزيز بجدة، ومدينة الملك فهد الطبية بالرياض، ومستشفى الملك فهد الجامعي بالخبر، ومستشفيات وزارة الدفاع. استغرق كل مشروع من 2 إلى 3 أشهر بفريق من 5 أشخاص، وانخفض رفض المطالبات بنحو 30% في كل موقع.",
+    2: "نعم. أكملت دورة التأهيل على منصة نفيس في أكاديمية نفيس التابعة لمجلس الضمان الصحي، وأنا سفير معتمد ضمن مبادرة سفراء صلات · مجلس الضمان الصحي · نفيس.",
+    3: "نظام KLIXA للمعلومات الصحية المبني بالذكاء الاصطناعي، وCORE AutoCode للترميز الطبي الآلي، وCORE Scribe للتوثيق السريري، وCORE CDSS لدعم القرار السريري، وCORE Triage لفرز المرضى، وCORE Mapping لتحويل الأكواد من SBS V2 إلى V3.",
+    4: "أقود حاليًا تطبيق نظام دورة الإيرادات في مستشفى جامعة الملك عبدالعزيز بجدة مع شركة كور للتحول، ويشمل ذلك الإعداد والربط مع نظام المعلومات الصحية وتحسين سير العمل وتدريب الموظفين.",
+    5: "أسرع طريقة هي البريد الإلكتروني: ahmedmostafa150@gmail.com، ويمكنك أيضًا مراسلتي على لينكدإن: linkedin.com/in/ahmad-moustafa."
+  }
+};
+
+window.UI_STRINGS = {
+  en: { copied: "Email copied to clipboard", copyFail: "Copy failed — please select the email manually", toAr: "Switch to Arabic", toEn: "Switch to English", toLight: "Switch to light theme", toDark: "Switch to dark theme", openMenu: "Open menu", closeMenu: "Close menu", title: "Ahmed Moustafa — Healthcare IT, Digital Health & RCM" },
+  ar: { copied: "تم نسخ البريد الإلكتروني", copyFail: "تعذّر النسخ، يرجى تحديد البريد يدويًا", toAr: "التبديل إلى العربية", toEn: "التبديل إلى الإنجليزية", toLight: "التبديل إلى الوضع الفاتح", toDark: "التبديل إلى الوضع الداكن", openMenu: "فتح القائمة", closeMenu: "إغلاق القائمة", title: "أحمد مصطفى — تقنية المعلومات الصحية والصحة الرقمية ودورة الإيرادات" }
+};
+
+</script>
+  <script>
+(function () {
+  "use strict";
+  var doc = document.documentElement;
+  doc.classList.add("js");
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function store(key, val) { try { localStorage.setItem(key, val); } catch (e) {} }
+  function lang() { return doc.getAttribute("lang") === "ar" ? "ar" : "en"; }
+  function ui(k) { return window.UI_STRINGS[lang()][k]; }
+
+  /* ---------------- i18n ---------------- */
+  var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n]"));
+  nodes.forEach(function (el) { el.setAttribute("data-en", el.innerHTML); });
+
+  var langBtn = document.getElementById("langBtn");
+  var themeBtn = document.getElementById("themeBtn");
+  var menuBtn = document.getElementById("menuBtn");
+
+  function applyLang(l) {
+    doc.setAttribute("lang", l);
+    doc.setAttribute("dir", l === "ar" ? "rtl" : "ltr");
+    nodes.forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (l === "ar" && window.I18N_AR[key] != null) el.innerHTML = window.I18N_AR[key];
+      else el.innerHTML = el.getAttribute("data-en");
+    });
+    document.title = ui("title");
+    langBtn.querySelector(".lang-label").textContent = l === "ar" ? "EN" : "ع";
+    langBtn.setAttribute("aria-label", l === "ar" ? ui("toEn") : ui("toAr"));
+    syncThemeLabel();
+    menuBtn.setAttribute("aria-label", menuOpen ? ui("closeMenu") : ui("openMenu"));
+    var clone = document.getElementById("marqueeClone");
+    if (clone) clone.innerHTML = document.querySelector('[data-i18n="clients"]').innerHTML;
+    resetAsk();
+    restartTyper();
+  }
+  langBtn.addEventListener("click", function () {
+    var next = lang() === "ar" ? "en" : "ar";
+    store("am-lang", next);
+    applyLang(next);
+  });
+
+  /* ---------------- Theme ---------------- */
+  var lightMQ = window.matchMedia("(prefers-color-scheme: light)");
+  function currentTheme() {
+    var t = doc.getAttribute("data-theme");
+    if (t === "light" || t === "dark") return t;
+    return lightMQ.matches ? "light" : "dark";
+  }
+  if (lightMQ.addEventListener) lightMQ.addEventListener("change", function () { syncThemeLabel(); });
+  function syncThemeLabel() {
+    var dark = currentTheme() === "dark";
+    themeBtn.setAttribute("aria-label", dark ? ui("toLight") : ui("toDark"));
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", dark ? "#07060f" : "#faf7ff");
+  }
+  themeBtn.addEventListener("click", function () {
+    var next = currentTheme() === "light" ? "dark" : "light";
+    doc.setAttribute("data-theme", next);
+    store("am-theme", next);
+    syncThemeLabel();
+  });
+
+  /* ---------------- Mobile drawer ---------------- */
+  var drawer = document.getElementById("drawer");
+  var menuOpen = false;
+  function setMenu(open) {
+    menuOpen = open;
+    drawer.hidden = !open;
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("aria-label", open ? ui("closeMenu") : ui("openMenu"));
+    menuBtn.querySelector("use").setAttribute("href", open ? "#i-x" : "#i-menu");
+  }
+  menuBtn.addEventListener("click", function () { setMenu(!menuOpen); });
+  drawer.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menuOpen) { setMenu(false); menuBtn.focus(); } });
+  window.addEventListener("resize", function () { if (window.innerWidth > 1024 && menuOpen) setMenu(false); });
+
+  /* ---------------- Nav state + progress ---------------- */
+  var nav = document.getElementById("nav");
+  var bar = document.querySelector(".progress span");
+  var ticking = false;
+  function onScroll() {
+    var y = window.scrollY;
+    nav.classList.toggle("scrolled", y > 8);
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = "scaleX(" + (max > 0 ? Math.min(1, y / max) : 0) + ")";
+    ticking = false;
+  }
+  window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+
+  /* Active section highlight */
+  var links = Array.prototype.slice.call(document.querySelectorAll(".nav-links a"));
+  if ("IntersectionObserver" in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          links.forEach(function (a) { a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id); });
+        }
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    ["expertise", "platforms", "journey", "projects", "credentials"].forEach(function (id) {
+      var s = document.getElementById(id); if (s) spy.observe(s);
+    });
+  }
+
+  /* ---------------- Reveal + count-up ---------------- */
+  function countUp(el) {
+    var to = parseInt(el.getAttribute("data-to"), 10);
+    if (reduceMotion) { el.textContent = to; return; }
+    var start = null, dur = 1400;
+    function step(t) {
+      if (!start) start = t;
+      var p = Math.min(1, (t - start) / dur);
+      el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(step);
+    }
+    el.textContent = "0";
+    requestAnimationFrame(step);
+  }
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !reduceMotion) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        var siblings = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+        el.style.transitionDelay = Math.min(siblings, 6) * 60 + "ms";
+        el.classList.add("in");
+        el.querySelectorAll(".count").forEach(countUp);
+        io.unobserve(el);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    var heroEls = document.querySelectorAll(".hero .reveal");
+    Array.prototype.forEach.call(heroEls, function (el, i) {
+      el.style.transitionDelay = i * 70 + "ms";
+      el.classList.add("in");
+    });
+    reveals.forEach(function (el) { if (!el.classList.contains("in")) io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ---------------- Typer ---------------- */
+  var typerEl = document.getElementById("typer");
+  var typerTimer = null;
+  function restartTyper() {
+    clearTimeout(typerTimer);
+    var words = window.TYPER_WORDS[lang()];
+    if (reduceMotion) { typerEl.textContent = words[0]; return; }
+    var wi = 0, ci = words[0].length, deleting = false;
+    typerEl.textContent = words[0];
+    function tick() {
+      var w = words[wi];
+      if (!deleting) {
+        if (ci < w.length) { ci++; typerEl.textContent = w.slice(0, ci); typerTimer = setTimeout(tick, 55); }
+        else { deleting = true; typerTimer = setTimeout(tick, 2200); }
+      } else {
+        if (ci > 0) { ci--; typerEl.textContent = w.slice(0, ci); typerTimer = setTimeout(tick, 28); }
+        else { deleting = false; wi = (wi + 1) % words.length; typerTimer = setTimeout(tick, 250); }
+      }
+    }
+    typerTimer = setTimeout(tick, 2200);
+  }
+
+  /* ---------------- Ask my profile ---------------- */
+  var askQ = document.getElementById("askQ");
+  var askA = document.getElementById("askA");
+  var aiMsg = askA.parentElement;
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+  var streamTimer = null;
+  function resetAsk() {
+    clearTimeout(streamTimer);
+    askQ.hidden = true;
+    aiMsg.classList.remove("thinking");
+    chips.forEach(function (c) { c.disabled = false; c.setAttribute("aria-pressed", "false"); });
+  }
+  chips.forEach(function (chip) {
+    chip.setAttribute("aria-pressed", "false");
+    chip.addEventListener("click", function () {
+      var id = chip.getAttribute("data-q");
+      var answer = window.ASK[lang()][id];
+      clearTimeout(streamTimer);
+      chips.forEach(function (c) { c.setAttribute("aria-pressed", c === chip ? "true" : "false"); });
+      askQ.textContent = chip.textContent;
+      askQ.hidden = false;
+      if (reduceMotion) { askA.textContent = answer; return; }
+      chips.forEach(function (c) { c.disabled = true; });
+      askA.textContent = "";
+      aiMsg.classList.add("thinking");
+      streamTimer = setTimeout(function () {
+        aiMsg.classList.remove("thinking");
+        var words = answer.split(" "), i = 0;
+        var caret = document.createElement("span"); caret.className = "stream-caret";
+        function next() {
+          i++;
+          askA.textContent = words.slice(0, i).join(" ");
+          if (i < words.length) { askA.appendChild(caret); streamTimer = setTimeout(next, 32); }
+          else { chips.forEach(function (c) { c.disabled = false; }); }
+        }
+        next();
+      }, 650);
+    });
+  });
+
+  /* ---------------- Copy email ---------------- */
+  var copyBtn = document.getElementById("copyEmail");
+  var toast = document.getElementById("toast");
+  var toastTimer = null;
+  function showToast(msg) {
+    toast.textContent = msg;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.textContent = ""; }, 3000);
+  }
+  copyBtn.addEventListener("click", function () {
+    var email = copyBtn.getAttribute("data-email");
+    var use = copyBtn.querySelector("use");
+    function ok() { showToast(ui("copied")); use.setAttribute("href", "#i-check"); setTimeout(function () { use.setAttribute("href", "#i-copy"); }, 2000); }
+    function fail() {
+      var t = document.getElementById("emailText");
+      try { var r = document.createRange(); r.selectNodeContents(t); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {}
+      showToast(ui("copyFail"));
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(email).then(ok, fail);
+      else fail();
+    } catch (e) { fail(); }
+  });
+
+  /* Portrait: fall back to the AM monogram when no photo is available */
+  var pImg = document.getElementById("portraitImg");
+  if (pImg) {
+    if (pImg.complete && pImg.naturalWidth === 0) pImg.remove();
+    else pImg.addEventListener("error", function () { pImg.remove(); });
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------------- Neural network background ---------------- */
+  var canvas = document.getElementById("neural");
+  var ctx = canvas.getContext && canvas.getContext("2d");
+  if (ctx) {
+    var W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2), pts = [], raf = null;
+    var LINK = 150;
+    function rgb(name) { return getComputedStyle(doc).getPropertyValue(name).trim() || "167,139,250"; }
+    function resize() {
+      W = window.innerWidth; H = window.innerHeight;
+      canvas.width = W * dpr; canvas.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var n = Math.round(Math.min(70, Math.max(26, (W * H) / 22000)));
+      pts = [];
+      for (var i = 0; i < n; i++) {
+        pts.push({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .25, vy: (Math.random() - .5) * .25, r: Math.random() * 1.6 + .6, c: Math.random() < .3 });
+      }
+    }
+    function draw() {
+      var c1 = rgb("--node"), c2 = rgb("--node-2");
+      ctx.clearRect(0, 0, W, H);
+      for (var i = 0; i < pts.length; i++) {
+        var p = pts[i];
+        for (var j = i + 1; j < pts.length; j++) {
+          var q = pts[j], dx = p.x - q.x, dy = p.y - q.y, d = Math.sqrt(dx * dx + dy * dy);
+          if (d < LINK) {
+            ctx.strokeStyle = "rgba(" + c1 + "," + (0.16 * (1 - d / LINK)).toFixed(3) + ")";
+            ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+          }
+        }
+      }
+      for (var k = 0; k < pts.length; k++) {
+        var s = pts[k];
+        ctx.fillStyle = "rgba(" + (s.c ? c2 : c1) + ",0.7)";
+        ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+    function step() {
+      for (var i = 0; i < pts.length; i++) {
+        var p = pts[i];
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < -20) p.x = W + 20; else if (p.x > W + 20) p.x = -20;
+        if (p.y < -20) p.y = H + 20; else if (p.y > H + 20) p.y = -20;
+      }
+      draw();
+      raf = requestAnimationFrame(step);
+    }
+    function start() { if (!raf && !reduceMotion) raf = requestAnimationFrame(step); }
+    function stop() { if (raf) { cancelAnimationFrame(raf); raf = null; } }
+    resize(); draw(); start();
+    var rt = null;
+    window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { resize(); draw(); }, 150); });
+    document.addEventListener("visibilitychange", function () { if (document.hidden) stop(); else start(); });
+    new MutationObserver(function () { if (!raf) draw(); }).observe(doc, { attributes: true, attributeFilter: ["data-theme"] });
+  }
+
+  /* ---------------- Init ---------------- */
+  applyLang(lang());
+})();
+
+</script>
+
+</body></html>
