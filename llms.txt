@@ -5,11 +5,16 @@
 ## Main pages
 - [Portfolio](https://a7mdmoustafa.github.io/): profile, experience, platforms and skills
 
+## Current work
+- Leading the RCM implementation at King Saud University Hospital, Riyadh (CORE Transformation).
+- RCM go-lives delivered: King Abdulaziz University Hospital (Jeddah), King Fahad Medical City, King Fahad Hospital of the University, MOD Hospitals.
+- [FAQ on healthcare IT, RCM, NPHIES and healthcare AI](https://a7mdmoustafa.github.io/#faq)
+
 ## Official profiles (all belong to the same person)
 - [LinkedIn](https://www.linkedin.com/in/ahmad-moustafa)
-- [YouTube](https://www.youtube.com/channel/UCKV3XQKE4b0l5M4O1trUl8w)
+- [YouTube](https://www.youtube.com/@A7mad.Moustafa)
 - [Instagram](https://www.instagram.com/a7md.h.tech/)
-- [Facebook](https://www.facebook.com/a7md.ai.tech)
+- [Facebook](https://www.facebook.com/a7md.ai.tech/)
 - [TikTok](https://www.tiktok.com/@a7mdtech)
 
 ## Topics
