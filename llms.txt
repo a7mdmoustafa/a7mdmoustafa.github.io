@@ -1,0 +1,16 @@
+# Ahmed Moustafa (أحمد مصطفى)
+
+> Healthcare IT Manager (مدير تقنية المعلومات الصحية) specializing in digital health and Revenue Cycle Management in Saudi Arabia. Works on hospital information systems (HIS), NPHIES integration and AI in healthcare. Shares Arabic educational content about health IT and health AI.
+
+## Main pages
+- [Portfolio](https://a7mdmoustafa.github.io/): profile, experience, platforms and skills
+
+## Official profiles (all belong to the same person)
+- [LinkedIn](https://www.linkedin.com/in/ahmad-moustafa)
+- [YouTube](https://www.youtube.com/channel/UCKV3XQKE4b0l5M4O1trUl8w)
+- [Instagram](https://www.instagram.com/a7md.h.tech/)
+- [Facebook](https://www.facebook.com/a7md.ai.tech)
+- [TikTok](https://www.tiktok.com/@a7mdtech)
+
+## Topics
+Healthcare IT, hospital information system (HIS), NPHIES, HL7, FHIR, medical coding, healthcare AI, digital health in Saudi Arabia, تقنية المعلومات الصحية, الصحة الرقمية, نظام معلومات المستشفى.
