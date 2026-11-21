@@ -3,7 +3,8 @@
 > Healthcare IT Manager (مدير تقنية المعلومات الصحية) specializing in digital health and Revenue Cycle Management in Saudi Arabia. Works on hospital information systems (HIS), NPHIES integration and AI in healthcare. Shares Arabic educational content about health IT and health AI.
 
 ## Main pages
-- [Portfolio](https://a7mdmoustafa.github.io/): profile, experience, platforms and skills
+- [Portfolio (English)](https://a7mdmoustafa.github.io/): profile, experience, platforms and skills
+- [Portfolio (Arabic)](https://a7mdmoustafa.github.io/ar/): الملف المهني بالعربية
 
 ## Current work
 - Leading the RCM implementation at King Saud University Hospital, Riyadh (CORE Transformation).

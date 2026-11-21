@@ -7,6 +7,11 @@
   <meta property="og:description" content="RCM, HIS & NPHIES implementation across 8+ Saudi hospitals. 30% fewer claim denials. 350+ staff trained.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://a7mdmoustafa.github.io/">
+  <link rel="alternate" hreflang="en" href="https://a7mdmoustafa.github.io/">
+  <link rel="alternate" hreflang="ar" href="https://a7mdmoustafa.github.io/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://a7mdmoustafa.github.io/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_SA">
   <meta property="og:url" content="https://a7mdmoustafa.github.io/">
   <meta property="og:site_name" content="Ahmed Moustafa">
   <meta name="twitter:card" content="summary">
@@ -512,7 +517,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   <script>
     (function () {
       var d = document.documentElement, t = null, l = null;
-      try { t = localStorage.getItem('am-theme'); l = localStorage.getItem('am-lang'); } catch (e) {}
+      try { t = localStorage.getItem('am-theme'); } catch (e) {}
       var q = new URLSearchParams(location.search).get('lang');
       if (q === 'ar' || q === 'en') l = q;
       if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
@@ -1240,10 +1245,9 @@ window.UI_STRINGS = {
     resetAsk();
     restartTyper();
   }
+  var onArPage = /\/ar\/?$/.test(location.pathname);
   langBtn.addEventListener("click", function () {
-    var next = lang() === "ar" ? "en" : "ar";
-    store("am-lang", next);
-    applyLang(next);
+    location.href = onArPage ? "../" : "ar/";
   });
 
   /* ---------------- Theme ---------------- */
